@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E7751C528920CD700331B31 /* ViewPresentableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7751C428920CD700331B31 /* ViewPresentableProtocol.swift */; };
+		9E7751C72892237100331B31 /* LottoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7751C62892237100331B31 /* LottoViewController.swift */; };
+		9E7751C92892305400331B31 /* translateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7751C82892305400331B31 /* translateViewController.swift */; };
+		9E7751CB28923ACC00331B31 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7751CA28923ACB00331B31 /* WebViewController.swift */; };
 		9E7F6D792890DD8600B4E556 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7F6D782890DD8600B4E556 /* AppDelegate.swift */; };
 		9E7F6D7B2890DD8600B4E556 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7F6D7A2890DD8600B4E556 /* SceneDelegate.swift */; };
 		9E7F6D7D2890DD8600B4E556 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7F6D7C2890DD8600B4E556 /* ViewController.swift */; };
@@ -19,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9E7751C428920CD700331B31 /* ViewPresentableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPresentableProtocol.swift; sourceTree = "<group>"; };
+		9E7751C62892237100331B31 /* LottoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoViewController.swift; sourceTree = "<group>"; };
+		9E7751C82892305400331B31 /* translateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = translateViewController.swift; sourceTree = "<group>"; };
+		9E7751CA28923ACB00331B31 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		9E7F6D752890DD8600B4E556 /* 4thWeekSeSAC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 4thWeekSeSAC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E7F6D782890DD8600B4E556 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E7F6D7A2890DD8600B4E556 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +51,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9E7751C328920CA200331B31 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				9E7751C428920CD700331B31 /* ViewPresentableProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		9E7F6D6C2890DD8600B4E556 = {
 			isa = PBXGroup;
 			children = (
@@ -62,10 +78,14 @@
 		9E7F6D772890DD8600B4E556 /* 4thWeekSeSAC */ = {
 			isa = PBXGroup;
 			children = (
+				9E7751C328920CA200331B31 /* Protocol */,
 				9E7F6D782890DD8600B4E556 /* AppDelegate.swift */,
 				9E7F6D7A2890DD8600B4E556 /* SceneDelegate.swift */,
 				9E7F6D7C2890DD8600B4E556 /* ViewController.swift */,
 				9E7F6D7E2890DD8600B4E556 /* Main.storyboard */,
+				9E7751CA28923ACB00331B31 /* WebViewController.swift */,
+				9E7751C82892305400331B31 /* translateViewController.swift */,
+				9E7751C62892237100331B31 /* LottoViewController.swift */,
 				9E7F6D8E2890E4CE00B4E556 /* ListTableViewCell.swift */,
 				9E7F6D8F2890E4CE00B4E556 /* ListTableViewCell.xib */,
 				9E7F6D8C2890E1F500B4E556 /* SearchViewController.swift */,
@@ -149,9 +169,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E7F6D7D2890DD8600B4E556 /* ViewController.swift in Sources */,
+				9E7751CB28923ACC00331B31 /* WebViewController.swift in Sources */,
 				9E7F6D792890DD8600B4E556 /* AppDelegate.swift in Sources */,
 				9E7F6D8D2890E1F600B4E556 /* SearchViewController.swift in Sources */,
+				9E7751C72892237100331B31 /* LottoViewController.swift in Sources */,
 				9E7F6D7B2890DD8600B4E556 /* SceneDelegate.swift in Sources */,
+				9E7751C92892305400331B31 /* translateViewController.swift in Sources */,
+				9E7751C528920CD700331B31 /* ViewPresentableProtocol.swift in Sources */,
 				9E7F6D902890E4CE00B4E556 /* ListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

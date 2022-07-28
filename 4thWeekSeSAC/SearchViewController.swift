@@ -27,7 +27,28 @@ extension UIViewController {
 
 
 
-class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class SearchViewController: UIViewController, ViewPresentableProtocol, UITableViewDelegate, UITableViewDataSource {
+    var navigationTitleString: String = ""
+    
+    var backgroundColor: UIColor = .clear
+    
+    static var indentifier: String = ""
+    
+    
+    func configureView() {
+        searchTableView.backgroundColor = .clear
+        searchTableView.separatorColor = .clear
+        searchTableView.rowHeight = 60
+    }
+    
+    func configureLabel() {
+        
+        
+    }
+    
+    
+    
+    
 
     @IBOutlet weak var searchTableView: UITableView!
     
