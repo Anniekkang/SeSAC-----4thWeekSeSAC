@@ -32,6 +32,8 @@ class translateViewController: UIViewController {
 //        userInputTextView.resignFirstResponder()
 //        userInputTextView.becomeFirstResponder()
         
+        userInputTextView.font = UIFont(name: "Georgia-BoldItalic", size: 17)
+        
     }
     
 
