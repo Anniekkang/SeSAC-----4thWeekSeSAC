@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E3211DD28975881008D11FE /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3211DC28975881008D11FE /* File.swift */; };
+		9E3211DF28975D0A008D11FE /* ReusableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3211DE28975D0A008D11FE /* ReusableViewProtocol.swift */; };
+		9E3211E128975FA2008D11FE /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3211E028975FA2008D11FE /* UserDefaultsHelper.swift */; };
+		9E3211E428977CE3008D11FE /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9E3211E328977CE3008D11FE /* Alamofire */; };
+		9E3211E728977CF8008D11FE /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 9E3211E628977CF8008D11FE /* SwiftyJSON */; };
 		9E7751C528920CD700331B31 /* ViewPresentableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7751C428920CD700331B31 /* ViewPresentableProtocol.swift */; };
 		9E7751C72892237100331B31 /* LottoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7751C62892237100331B31 /* LottoViewController.swift */; };
 		9E7751C92892305400331B31 /* translateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7751C82892305400331B31 /* translateViewController.swift */; };
@@ -25,6 +30,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9E3211DC28975881008D11FE /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		9E3211DE28975D0A008D11FE /* ReusableViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableViewProtocol.swift; sourceTree = "<group>"; };
+		9E3211E028975FA2008D11FE /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
 		9E7751C428920CD700331B31 /* ViewPresentableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPresentableProtocol.swift; sourceTree = "<group>"; };
 		9E7751C62892237100331B31 /* LottoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoViewController.swift; sourceTree = "<group>"; };
 		9E7751C82892305400331B31 /* translateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = translateViewController.swift; sourceTree = "<group>"; };
@@ -49,16 +57,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E3211E728977CF8008D11FE /* SwiftyJSON in Frameworks */,
+				9E3211E428977CE3008D11FE /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9E3211DB2897586F008D11FE /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				9E3211DC28975881008D11FE /* File.swift */,
+				9E3211E028975FA2008D11FE /* UserDefaultsHelper.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
 		9E7751C328920CA200331B31 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
 				9E7751C428920CD700331B31 /* ViewPresentableProtocol.swift */,
+				9E3211DE28975D0A008D11FE /* ReusableViewProtocol.swift */,
 				9E7751CE289384D000331B31 /* EF_Diary.ttf */,
 			);
 			path = Protocol;
@@ -83,6 +103,7 @@
 		9E7F6D772890DD8600B4E556 /* 4thWeekSeSAC */ = {
 			isa = PBXGroup;
 			children = (
+				9E3211DB2897586F008D11FE /* Constant */,
 				9E7751C328920CA200331B31 /* Protocol */,
 				9E7F6D782890DD8600B4E556 /* AppDelegate.swift */,
 				9E7F6D7A2890DD8600B4E556 /* SceneDelegate.swift */,
@@ -118,6 +139,10 @@
 			dependencies = (
 			);
 			name = 4thWeekSeSAC;
+			packageProductDependencies = (
+				9E3211E328977CE3008D11FE /* Alamofire */,
+				9E3211E628977CF8008D11FE /* SwiftyJSON */,
+			);
 			productName = 4thWeekSeSAC;
 			productReference = 9E7F6D752890DD8600B4E556 /* 4thWeekSeSAC.app */;
 			productType = "com.apple.product-type.application";
@@ -146,6 +171,10 @@
 				Base,
 			);
 			mainGroup = 9E7F6D6C2890DD8600B4E556;
+			packageReferences = (
+				9E3211E228977CE3008D11FE /* XCRemoteSwiftPackageReference "Alamofire" */,
+				9E3211E528977CF8008D11FE /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = 9E7F6D762890DD8600B4E556 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -176,14 +205,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E7F6D7D2890DD8600B4E556 /* ViewController.swift in Sources */,
+				9E3211E128975FA2008D11FE /* UserDefaultsHelper.swift in Sources */,
 				9E7751CB28923ACC00331B31 /* WebViewController.swift in Sources */,
 				9E7F6D792890DD8600B4E556 /* AppDelegate.swift in Sources */,
 				9E7F6D8D2890E1F600B4E556 /* SearchViewController.swift in Sources */,
 				9E7751C72892237100331B31 /* LottoViewController.swift in Sources */,
+				9E3211DF28975D0A008D11FE /* ReusableViewProtocol.swift in Sources */,
 				9E7751CD28935D4300331B31 /* LocationViewController.swift in Sources */,
 				9E7F6D7B2890DD8600B4E556 /* SceneDelegate.swift in Sources */,
 				9E7751C92892305400331B31 /* translateViewController.swift in Sources */,
 				9E7751C528920CD700331B31 /* ViewPresentableProtocol.swift in Sources */,
+				9E3211DD28975881008D11FE /* File.swift in Sources */,
 				9E7F6D902890E4CE00B4E556 /* ListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,6 +434,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9E3211E228977CE3008D11FE /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		9E3211E528977CF8008D11FE /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9E3211E328977CE3008D11FE /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9E3211E228977CE3008D11FE /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		9E3211E628977CF8008D11FE /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9E3211E528977CF8008D11FE /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9E7F6D6D2890DD8600B4E556 /* Project object */;
 }

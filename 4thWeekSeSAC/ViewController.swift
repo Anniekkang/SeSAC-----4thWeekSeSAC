@@ -25,8 +25,7 @@ class ViewController: UIViewController,ViewPresentableProtocol {
             return .blue
         }
     }
-    
-    
+
     
     func configureView() {
         
@@ -37,16 +36,15 @@ class ViewController: UIViewController,ViewPresentableProtocol {
         view.backgroundColor = backgroundColor
     }
     
-    
-    
-    
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        UserDefaultsHelper.standard.nickname = "고래밥" //newvalue에 들어가게됨
+        title = UserDefaultsHelper.standard.nickname
+        UserDefaultsHelper.standard.age = 80
+        
+        print(UserDefaultsHelper.standard.age)//훨씬더 간단!
     }
-
-
+    
 }
 

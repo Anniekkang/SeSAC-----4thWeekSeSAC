@@ -28,8 +28,8 @@ extension UIViewController {
 
 
 class SearchViewController: UIViewController, ViewPresentableProtocol, UITableViewDelegate, UITableViewDataSource {
+   
     var navigationTitleString: String = ""
-    
     var backgroundColor: UIColor = .clear
     
     static var indentifier: String = ""
@@ -46,10 +46,6 @@ class SearchViewController: UIViewController, ViewPresentableProtocol, UITableVi
         
     }
     
-    
-    
-    
-
     @IBOutlet weak var searchTableView: UITableView!
     
     
